@@ -3,6 +3,7 @@ import LoginPage from "../pages/Auth/LoginPage";
 import DashboardPage from "../pages/dashboard/Dashboardpage";
 import ProtectedRoute from "./ProtectedRoutes";
 import MarketPage from "../pages/Market/Marketpage";
+import SchemesPage from "../pages/GovtSchemes/GovtSchemes";
 
 const AppRoutes = () => {
   return (
@@ -25,10 +26,10 @@ const AppRoutes = () => {
         </ProtectedRoute>
       }/>
       <Route 
-      path="/scheme"
+      path="/schemes"
       element={
         <ProtectedRoute>
-          <MarketPage />
+          <SchemesPage />
         </ProtectedRoute>
       }/>
     </Routes>
