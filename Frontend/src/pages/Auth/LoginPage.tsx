@@ -40,7 +40,7 @@ const LoginPage = () => {
         className="bg-white p-8 rounded-xl shadow-md w-96"
       >
         <h1 className="text-2xl font-bold mb-6 text-center text-indigo-600">
-          Hackthon Login
+          MandiMate
         </h1>
         <h3 className="text-md text-shadow-gray-100">Email</h3>
         <input
