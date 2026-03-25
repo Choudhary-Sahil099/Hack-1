@@ -4,6 +4,8 @@ import DashboardPage from "../pages/dashboard/Dashboardpage";
 import ProtectedRoute from "./ProtectedRoutes";
 import MarketPage from "../pages/Market/Marketpage";
 import SchemesPage from "../pages/GovtSchemes/GovtSchemes";
+import AnalyticsPage from "../pages/Analytics/Analyticspage";
+import SettingsPage from "../pages/settingPage/SettingPage";
 
 const AppRoutes = () => {
   return (
@@ -30,6 +32,20 @@ const AppRoutes = () => {
       element={
         <ProtectedRoute>
           <SchemesPage />
+        </ProtectedRoute>
+      }/>
+      <Route 
+      path="/analytics"
+      element={
+        <ProtectedRoute>
+          <AnalyticsPage />
+        </ProtectedRoute>
+      }/>
+      <Route 
+      path="/settings"
+      element={
+        <ProtectedRoute>
+          <SettingsPage />
         </ProtectedRoute>
       }/>
     </Routes>
